@@ -40,7 +40,7 @@
     <h1>Flower Gallery</h1>
     <div class="gallery">
         <div class="flower">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Rose_flower_in_garden.jpg" alt="Rose">
+            <img src="https://commons.wikimedia.org/wiki/File:%27Plant-Freesia-Fresia-02.jpg" alt="Fresia">
             <p>Rose</p>
         </div>
         <div class="flower">
