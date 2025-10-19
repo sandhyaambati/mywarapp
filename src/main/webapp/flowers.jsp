@@ -41,19 +41,12 @@
     <div class="gallery">
         <div class="flower">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/%27Plant-Freesia-Fresia-02.jpg" alt="Fresia" width="320">
-            <p>Rose</p>
+            <p>Fresia</p>
         </div>
         <div class="flower">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Tulip_-_floriade_canberra.jpg" alt="Tulip">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/A_flower_in_shadows.tif" alt="Tulip" width="320">
             <p>Tulip</p>
         </div>
-        <div class="flower">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Yellow_lily.jpg" alt="Lily">
-            <p>Lily</p>
-        </div>
-        <div class="flower">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Blue_orchid.jpg" alt="Orchid">
-            <p>Orchid</p>
         </div>
     </div>
 </body>
