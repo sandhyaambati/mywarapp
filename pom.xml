@@ -8,7 +8,7 @@
     <artifactId>mywarapp</artifactId>
 
     <!-- Base version -->
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <packaging>war</packaging>
     <name>My WAR Project</name>
@@ -33,6 +33,7 @@
         <finalName>${project.artifactId}-${project.version}-${build.number}</finalName>
     </build>
 </project>
+
 
 
 
