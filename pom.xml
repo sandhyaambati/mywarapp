@@ -30,9 +30,10 @@
 
     <build>
         <!-- Dynamic finalName with version and Jenkins build number -->
-        <finalName>${project.artifactId}-${project.version}-${build.number}</finalName>
+        <finalName>${project.artifactId}-${project.version}</finalName>
     </build>
 </project>
+
 
 
 
