@@ -1,15 +1,22 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.example</groupId>
-  <artifactId>mywarapp</artifactId>
-  <version>0.0.1</version>
-  <packaging>war</packaging>
+    <groupId>com.example</groupId>
+    <artifactId>mywarapp</artifactId>
+
+    <!-- Base version -->
+    <version>1.0.0</version>
+
+    <packaging>war</packaging>
     <name>My WAR Project</name>
+
+    <properties>
+        <!-- This property will hold the final WAR name, can be overridden by Jenkins -->
+        <build.number>0</build.number>
+    </properties>
 
     <dependencies>
         <!-- Servlet API -->
@@ -22,9 +29,11 @@
     </dependencies>
 
     <build>
-        <finalName>mywarapp</finalName>
+        <!-- Dynamic finalName with version and Jenkins build number -->
+        <finalName>${project.artifactId}-${project.version}-${build.number}</finalName>
     </build>
 </project>
+
 
 
 
