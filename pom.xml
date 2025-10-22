@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>mywarapp1</artifactId>
+  <artifactId>mywarapp</artifactId>
   <version>0.0.1</version>
   <packaging>war</packaging>
     <name>My WAR Project</name>
@@ -25,5 +25,6 @@
         <finalName>mywarapp</finalName>
     </build>
 </project>
+
 
 
