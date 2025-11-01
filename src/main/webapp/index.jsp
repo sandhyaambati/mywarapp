@@ -1,5 +1,5 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
 <head>
     <title>Home Page</title>
     <style>
@@ -31,6 +31,7 @@
     </form>
 </body>
 </html>
+
 
 
 
