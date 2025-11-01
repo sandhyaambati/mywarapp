@@ -10,16 +10,24 @@ import java.io.PrintWriter;
 
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Set content type
         response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>Welcome to My WAR Project!</h1>");
-        out.println("<a href='index.jsp'>Go to UI Page</a>");
-        out.println("</body></html>");
+
+        // Use try-with-resources to automatically close PrintWriter
+        try (PrintWriter out = response.getWriter()) {
+
+            // HTML content
+            out.println("<html><body>");
+            out.println("<h1>Welcome to My WAR Project!</h1>");
+            out.println("<a href='index.jsp'>Go to UI Page</a>");
+            out.println("</body></html>");
+
+        } // PrintWriter automatically closed here, prevents resource leaks
+
     }
 }
-
