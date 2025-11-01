@@ -13,7 +13,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException {
 
         // Set content type
         response.setContentType("text/html");
@@ -21,13 +21,15 @@ public class HelloServlet extends HttpServlet {
         // Use try-with-resources to automatically close PrintWriter
         try (PrintWriter out = response.getWriter()) {
 
-            // HTML content
+            // Write HTML response
             out.println("<html><body>");
             out.println("<h1>Welcome to My WAR Project!</h1>");
             out.println("<a href='index.jsp'>Go to UI Page</a>");
             out.println("</body></html>");
 
-        } // PrintWriter automatically closed here, prevents resource leaks
-
+        } catch (IOException e) {
+            // Handle exception explicitly for Sonar compliance
+            throw new ServletException("Error writing response", e);
+        }
     }
 }
