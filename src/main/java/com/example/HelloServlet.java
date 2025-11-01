@@ -30,6 +30,14 @@ public class HelloServlet extends HttpServlet {
         } catch (IOException e) {
             // Handle exception explicitly for Sonar compliance
             throw new ServletException("Error writing response", e);
+            // Optionally, send an error response
+            try {
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
+                               "Unable to generate response");
+            } catch (IOException ex) {
+                log("Failed to send error response: " + ex.getMessage(), ex);
+            }
         }
     }
 }
+
