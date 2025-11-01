@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <title>Home Page</title>
@@ -31,5 +31,6 @@
     </form>
 </body>
 </html>
+
 
 
