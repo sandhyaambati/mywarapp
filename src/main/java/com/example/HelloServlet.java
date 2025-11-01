@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
     @Override
-    protected void doGet, HttpServletResponse response) 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -21,4 +21,5 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 }
+
 
